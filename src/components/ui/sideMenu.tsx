@@ -74,7 +74,7 @@ const SideMenu = () => {
           </span>
         </div>
 
-            <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+        <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
           <Image src={menuStart} alt="Menu start Icon" />
           <span className=" text-[#826B8E] text-base font-bol">
             NFT Staking
@@ -84,53 +84,57 @@ const SideMenu = () => {
       <Collapsible
         open={isOpenCassino}
         onOpenChange={setIsOpenCassino}
-        className={classNames(collapsedCss, "mt-4", isOpenCassino ? "" : "bg-[#170D19]")}
+        className={classNames(
+          collapsedCss,
+          "mt-4",
+          isOpenCassino ? "" : "bg-[#170D19]"
+        )}
       >
         <CollapsibleTrigger
-        className={classNames(collapsedContentCss, {
-          "bg-[#170D19]": !isOpenCassino,
-          "bg-[#25192999]": isOpenCassino,
-          "text-[#E90083]": isOpenCassino,
-          "text-[#826B8E]": !isOpenCassino,
-        })}
+          className={classNames(collapsedContentCss, {
+            "bg-[#170D19]": !isOpenCassino,
+            "bg-[#25192999]": isOpenCassino,
+            "text-[#E90083]": isOpenCassino,
+            "text-[#826B8E]": !isOpenCassino,
+          })}
         >
           Cassino {isOpenCassino ? <ChevronUp /> : <ChevronDown />}
         </CollapsibleTrigger>
         <CollapsibleContent className="px-6">
-          <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuLogo} alt="Menu logo Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Originals
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={sevenIcon} alt="Menu gambling Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Caça-Niqueis
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRealeases} alt="Menu realeases Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Lançamentos
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuTableGames} alt="Menu table games Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Jogos de mesa
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRoullete} alt="Menu roullete Icon" />
             <span className=" text-[#826B8E] text-base font-bol">Roleta</span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuBlackJack} alt="Menu blackjack Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               BlackJack
@@ -154,40 +158,40 @@ const SideMenu = () => {
           Trade {isOpenTrade ? <ChevronUp /> : <ChevronDown />}
         </CollapsibleTrigger>
         <CollapsibleContent className="px-6">
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuLogo} alt="Menu logo Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Originals
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={sevenIcon} alt="Menu gambling Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Caça-Niqueis
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRealeases} alt="Menu realeases Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Lançamentos
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuTableGames} alt="Menu table games Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Jogos de mesa
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRoullete} alt="Menu roullete Icon" />
             <span className=" text-[#826B8E] text-base font-bol">Roleta</span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuBlackJack} alt="Menu blackjack Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               BlackJack
@@ -211,40 +215,40 @@ const SideMenu = () => {
           Esportes {isOpenSports ? <ChevronUp /> : <ChevronDown />}
         </CollapsibleTrigger>
         <CollapsibleContent className="px-6">
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuLogo} alt="Menu logo Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Originals
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={sevenIcon} alt="Menu gambling Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Caça-Niqueis
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRealeases} alt="Menu realeases Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Lançamentos
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuTableGames} alt="Menu table games Icon" />
             <span className=" text-[#826B8E] text-base font-bol">
               Jogos de mesa
             </span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuRoullete} alt="Menu roullete Icon" />
             <span className=" text-[#826B8E] text-base font-bol">Roleta</span>
           </div>
 
-              <div className="flex flex-row mt-2.5 gap-[10px] pb-2">
+          <div className="flex flex-row mt-2.5 gap-[10px] pb-2 cursor-pointer">
             <Image src={menuBlackJack} alt="Menu blackjack Icon" />
             <span className="text-[#826B8E] text-base font-bol">BlackJack</span>
           </div>

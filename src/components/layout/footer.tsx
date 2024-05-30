@@ -143,8 +143,8 @@ export function Footer() {
           </span>
         </div>
 
-        <div className="flex flex-row gap-4">
-          <Image src={letter} alt="Letter icon" className="w-[30px]" />
+        <div className="flex flex-row gap-4 text-[#826B8E]">
+          <Image src={letter} alt="Letter icon" />
           CONTACT US
         </div>
       </div>
