@@ -119,7 +119,7 @@ export function Footer() {
 
           <div className="flex cursor-pointer items-center w-[392px] h-[90px] rounded-[10px] bg-blue-gradient shadow-blue-box-shadow px-6">
             <Image src={telegram} alt="Telegram icon" />
-            <span className="w-[67%] break-all pl-6">
+            <span className="w-[65%] break-all pl-6">
               Pigmo is also on Telegram.
               <strong>Discover more now</strong>
             </span>
