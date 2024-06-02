@@ -116,7 +116,7 @@ export default function Home() {
           {cassinoMocked.map((item) => (
             <div
               key={item.id}
-              className="hover:translate-y-[-8px] transition-all ease-linear"
+              className="hover:translate-y-[-8px] transition-all ease-linear cursor-pointer"
             >
               <Image className="rounded-lg" src={item.image} alt={item.title} />
             </div>

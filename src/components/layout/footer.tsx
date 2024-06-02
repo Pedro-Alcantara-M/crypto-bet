@@ -8,7 +8,7 @@ import letter from "../../assets/letter.svg";
 import { useState } from "react";
 
 const linksCss =
-  "text-[#826B8E] text-sm pl-0 group-hover:font-bold group-hover:pl-4 group-hover:text-[#E90083] transition-all";
+  "text-[#826B8E] text-sm pl-0 group-hover:font-bold group-hover:pl-4 group-hover:text-[#E90083] transition-all cursor-pointer";
 
 const titlesCss = "text-white text-base font-bold";
 

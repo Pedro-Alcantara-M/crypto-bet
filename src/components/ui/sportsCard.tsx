@@ -13,7 +13,7 @@ export function SportsCard({ image, title, whiteImage }: SportsCardProps) {
 
   return (
     <div
-      className={`flex flex-col justify-center items-center w-44 h-[150px] border border-[#35243D] text-[#826B8E] rounded-md gap-[21px] ease-in duration-300 ${
+      className={`flex flex-col justify-center items-center cursor-pointer w-44 h-[150px] border border-[#35243D] text-[#826B8E] rounded-md gap-[21px] ease-in duration-300 ${
         isHovered ? "bg-gradient-to-hover shadow-to-hover text-white" : ""
       }`}
       onMouseEnter={() => setIsHovered(true)}
